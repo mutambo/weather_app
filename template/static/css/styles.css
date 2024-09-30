@@ -1,0 +1,396 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.logout-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+p{
+    text-align: center;
+    margin-top: 30dvi;
+    margin-left: 20px;
+}
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0,20;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+#signup-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Form Styles */
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background-color: #fff;
+}
+
+/* Button Styles */
+.submit-btn {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #357ab9;
+}
+/* Login Link */
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+/* Weather plot image styling */
+.weather-plot {
+    display: block;
+    margin-right: 10px auto;  /* Center the image horizontally */
+    border: 2px solid #000000;
+    border-radius: 8px;  /* Rounded corners */
+    width: 40%;  /* Make the image responsive, 80% of container width */
+    max-width: 200%;  /* Limit the maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow */
+}
+/* Signup Link */
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+/* Form Styles */
+#signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+#dashboard-container {
+    max-height: 2000px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    margin-top: 70px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4a90e2;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+/* Form Styles */
+#signup-form {
+    display: flex;
+    flex-direction: column;
+}
+.welcome-message {
+    color: #777;
+    font-size: 18px;
+}
+
+/* Weather Data Section */
+#weather-data {
+    margin-top: 20px;
+}
+
+h3 {
+    color: #333;
+    font-size: 22px;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 10px;
+}
+
+.weather-averages {
+    list-style: none;
+    padding: 0;
+}
+
+.weather-averages li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.weather-averages span {
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+/* Footer and Logout Button */
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+
+/* General Container for the Weather Dashboard */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Plot Container Styling */
+.plot-container {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Plot Title Styling */
+.plot-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Styling for the iframe that contains the plots */
+.plot-frame {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design: On smaller screens, reduce iframe height */
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #dashboard-container {
+        width: 95%;
+    }
+    .plot-frame {
+        height: 400px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .weather-averages li {
+        font-size: 16px;
+    }
+
+    .logout-btn {
+        font-size: 14px;
+    }
+    #login-container {
+        width: 90%;
+    }
+    #signup-container {
+        width: 90%;
+    }
+    .plot-grid {
+        grid-template-columns: 1fr; /* Stacks plots vertically on smaller screens */
+    }
+    .plot-frame {
+        height: 300px; /* Reduce plot height for smaller screens */
+    }
+}

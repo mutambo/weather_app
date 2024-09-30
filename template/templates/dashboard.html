@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div id="dashboard-container">
+        
+        <header>
+            <h2>Weather Data Dashboard</h2>
+            <p class="welcome-message">Welcome, {{ session['username'] }}!</p>
+        </header>
+
+        <section id="weather-data">
+            <div class="container">
+                <h2 class="title">Weather Data Plots</h2>
+        <div class="plot-grid">
+                <!-- First plot: Precipitation vs Max Temperature -->
+                <div class="plot-container">
+                    <h3 class="plot-title">Precipitation vs Max Temperature</h3>
+                    <iframe src="{{ url_for('static', filename='plots/weather_plot.html') }}" width="100%" height="600px"></iframe>
+                </div>
+                
+                <!-- Second plot: Average Wind Speed vs Precipitation -->
+                <div class="plot-container">
+                    <h3 class="plot-title">Average Wind Speed vs Precipitation</h3>
+                    <iframe class="plot-frame" src="{{ url_for('static', filename='plots/wind_vs_precip.html') }}"></iframe>
+                </div>
+         </div> 
+            </div>            
+            <h3>Weather Averages:</h3>
+            <ul class="weather-averages">
+                <li>Average Precipitation: <span>{{ avg_precip }}</span></li>
+                <li>Average Maximum Temperature: <span>{{ avg_max_temp }}</span></li>
+                <li>Average Minimum Temperature: <span>{{ avg_min_temp }}</span></li>
+                <li>Average Wind Speed: <span>{{ avg_wind }}</span></li>
+            </ul>
+            
+        </section>
+
+        <footer>
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </footer>
+    </div>
+</body>
+</html>
